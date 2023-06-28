@@ -50,11 +50,11 @@
     //Numero de decimales del eje y
     //Formula para dibujar
     //Cada cuanto se muestrea la formula
-    g00=new Grafica();
-    g00.set("lienzo",0.1,0,10,0,10,100,10,true,true,0,0);
-    g00.dibujar();
-    var l=document.getElementById("lienzo");
-    l.addEventListener('mousemove',faux1,false);
+    // g00=new Grafica();
+    // g00.set("lienzo",0.1,0,10,0,10,100,10,true,true,0,0);
+    // g00.dibujar();
+    // var l=document.getElementById("lienzo");
+    // l.addEventListener('mousemove',faux1,false);
    });
    
    var jsx_pr;
@@ -115,11 +115,11 @@
    }
    
    function jsx_resolver_matriz(ma,it,es,fa){
-    console.log(ma.matriz);
+    // console.log(ma.matriz);
     var ma01=ma
     ma.matriz.map((x) => {
       x.map((i) => {
-        console.log(i.numerador);
+        // console.log(i.numerador);
       })
     });
     var cont=$("#jsx_solucion_pasos");

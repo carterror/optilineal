@@ -1,175 +1,210 @@
-<!DOCTYPE HTML>
-<html xmlns="http://www.w3.org/1999/xhtml">
- <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>OptiLineal v0.2</title>
-  <link type="text/css" href="./css/themes/base/jquery.ui.all.css" rel="stylesheet" />
-  <script type="text/javascript" src="./js/jquery-1.4.2.js"></script>
-  <script type="text/javascript" src="./js/ui/jquery.ui.core.js"></script>
-  <script type="text/javascript" src="./js/ui/jquery.ui.widget.js"></script>
-  <script type="text/javascript" src="./js/ui/jquery.ui.tabs.js"></script>
-  <script type="text/javascript" src="./js/ui/jquery.ui.button.js"></script>
-  <script type="text/javascript" src="./js/ui/jquery.ui.mouse.js"></script>
-  <script type="text/javascript" src="./js/ui/jquery.ui.slider.js"></script>
-  <script type="text/javascript" src="./js/ui/jquery.ui.selectable.js"></script>
-  <script type="text/javascript" src="./js/ui/jquery.ui.accordion.js"></script>
-  <script type="text/javascript" src="./js/ui/jquery.multipleselectbox.js"></script>
-  <script type="text/javascript" src="./js/racional.js"></script>
-  <script type="text/javascript" src="./js/objetos.js"></script>
-  <script type="text/javascript" src="./js/jsx.js"></script>
-  <script type="text/javascript" src="./js/themeswitchertool.js"></script>
-  <!-- <link type="text/css" href="./css/themes/demos.css" rel="stylesheet" /> -->
-  <link type="text/css" href="./css/themes/multipleselectbox.css" rel="stylesheet" />
-  <link type="text/css" href="./css/cupertino/jquery-ui-1.8.4.custom.css" rel="stylesheet" />
-  <link type="text/css" href="./css/jsx.css" rel="stylesheet" />
-  <link type="text/css" href="./css/index.css" rel="stylesheet" />
-  <link type="text/css" href="./css/bootstrap.min.css" rel="stylesheet" />
- </head>
- <body>
-<div class="container">
+<!DOCTYPE html>
+<html lang="en">
 
-  <div id="simplex_tabs" >
-    <div id="" class="ui-state-default ui-corner-all" style="font-size: x-large;">
-        OptiLineal
-    </div>
-   <ul>
+<head>
+    <meta charset="utf-8">
+    <title>OptiLineal</title>
+    <meta name='Description' content='OptiLineal is an application for solving linear programming problems' />
+    <meta name='version' content='0.2.0' />
+    <meta name='viewport' content='width=device-width, initial-scale=1, user-scalable=no viewport-fit=cover' />
+    <meta name='theme-color' content='#000000' />
+    <meta name='mobile-web-app-capable' content='yes' />
+    <meta name='apple-mobile-web-app-status-bar-style' content='black-translucent' />
+    <meta name='apple-mobile-web-app-title' content='' />
+    <meta name='copyright' content='copyright 2023 Carlos Brayan Rámila Chorens' />
+    <meta http-equiv='Content-Security-Policy'
+        content="default-src * file:; style-src 'self' 'unsafe-inline' *; script-src 'self' 'unsafe-inline' 'unsafe-eval' *; img-src 'self' data:;" />
+    <script src="cordova.js"></script>
+
+    <!-- <link type="text/css" href="./css/themes/base/jquery.ui.all.css" rel="stylesheet" /> -->
+    <script type="text/javascript" src="./js/jquery-1.4.2.js"></script>
+    <script type="text/javascript" src="./js/ui/jquery.ui.core.js"></script>
+    <script type="text/javascript" src="./js/ui/jquery.ui.widget.js"></script>
+    <script type="text/javascript" src="./js/ui/jquery.ui.tabs.js"></script>
+    <script type="text/javascript" src="./js/ui/jquery.ui.button.js"></script>
+    <script type="text/javascript" src="./js/ui/jquery.ui.mouse.js"></script>
+    <script type="text/javascript" src="./js/ui/jquery.ui.slider.js"></script>
+    <script type="text/javascript" src="./js/ui/jquery.ui.selectable.js"></script>
+    <script type="text/javascript" src="./js/ui/jquery.ui.accordion.js"></script>
+    <script type="text/javascript" src="./js/ui/jquery.multipleselectbox.js"></script>
+    <script type="text/javascript" src="./js/racional.js"></script>
+    <script type="text/javascript" src="./js/objetos.js"></script>
+    <script type="text/javascript" src="./js/jsx.js"></script>
+    <script type="text/javascript" src="./js/themeswitchertool.js"></script>
+    <!-- <link type="text/css" href="./css/themes/demos.css" rel="stylesheet" /> -->
+    <!-- <link type="text/css" href="./css/themes/multipleselectbox.css" rel="stylesheet" /> -->
+    <link type="text/css" href="./css/cupertino/jquery-ui-1.8.4.custom.css" rel="stylesheet" />
+    <link type="text/css" href="./css/jsx.css" rel="stylesheet" />
+    <link type="text/css" href="./css/index.css" rel="stylesheet" />
+    <link type="text/css" href="./css/bootstrap.min.css" rel="stylesheet" />
+    <style>
+        :root {
+            color: black !important;
+        }
+    </style>
+</head>
+
+<body style="font-family:'Helvetica Neue';">
+    <div class="container">
+
+        <div id="simplex_tabs" style="margin: 0px; padding: 0px;">
+            <div id="" class="ui-state-default ui-corner-all" style="font-size: x-large; text-align: center;">
+                OptiLineal
+            </div>
+            <!-- <ul>
     <li><a href="#tab_en">Entradas</a></li>
     <li><a href="#tab_au">Aumentado</a></li>
     <li><a href="#tab_simplex">Simplex</a></li>
-    <!-- <li><a href="#tab_acercade">Acerca de...</a></li> -->
-   </ul>
+   <li><a href="#tab_acercade">Acerca de...</a></li>
+   </ul> -->
 
 
-   <div id="tab_en">
+            <div id="tab_en">
 
-    <div class="row">
-        <div id="jsx_funcion_objetivo" class="col-12">
-        <div class="titulo ui-state-default ui-corner-all">Funci&oacute;n objetivo</div>
-        <div class="contenido ui-corner-all">
-        <div id="jsx_fo_tipo">
-        <input type="radio" id="jsx_fo_tipo_max" name="jsx_fo_tipo" checked="checked" />
-        <label for="jsx_fo_tipo_max">Maximizar</label>
-        <input type="radio" id="jsx_fo_tipo_min" name="jsx_fo_tipo" />
-        <label for="jsx_fo_tipo_min">Minimizar</label>
-        </div>
-        <div id="jsx_fo_numvar ">
-        <label for="jsx_fo_numvar_n">Variables</label>
-        <input disabled="disabled" type="text" id="jsx_fo_numvar_n" class="form-control" style="border:0; color:#555; background-color: transparent; font-weight:bold;" />
-        
-        <div id="jsx_fo_numvar_s"></div>
-        </div>
-        <div id="jsx_fo_fo" class="m-5">
-        <div id="jsx_fo_fo_root">
-            <div><input type="radio" checked="checked" /><label>+</label><input type="radio" /><label>-</label></div><input type="text" class="form-control p-3" style="float: left; display: inline;"/> X</div>
-        <div id="jsx_fo_fo_cont"></div>
-        </div>
-        </div>
-        </div>
-    </div>
+                <div class="row">
+                    <div id="jsx_funcion_objetivo" class="col-12">
+                        <div class="titulo ui-state-default ui-corner-all">Funci&oacute;n objetivo</div>
+                        <div class="contenido ui-corner-all">
+                            <div id="jsx_fo_tipo">
+                                <input type="radio" id="jsx_fo_tipo_max" name="jsx_fo_tipo" checked="checked" />
+                                <label for="jsx_fo_tipo_max">Maximizar</label>
+                                <input type="radio" id="jsx_fo_tipo_min" name="jsx_fo_tipo" />
+                                <label for="jsx_fo_tipo_min">Minimizar</label>
+                            </div>
+                            <div id="jsx_fo_numvar ">
+                                <label for="jsx_fo_numvar_n">Variables</label>
+                                <input disabled="disabled" type="text" id="jsx_fo_numvar_n" class="form-control"
+                                    style="border:0; color:#555; background-color: transparent; font-weight:bold;" />
 
-    <div class="row">
-        <div id="jsx_restricciones" style="width: 100%; display: block;">
-        <div class="titulo ui-state-default ui-corner-all">Restricciones</div>
-        <div class="contenido ui-corner-all">
-        <table id="jsx_res">
-        <tr>
-            <td>
-            <div id="jsx_res_nueva">
-            <div id="jsx_res_fo_cont"></div>
-            <div id="jsx_res_fo_signo">
-            <div id="jsx_res_fo_signo_opt">
-                <input type="radio" checked="checked" id="jsx_res_fo_signo_opt_lt" name="jsx_res_fo_signo_opt" /><label for="jsx_res_fo_signo_opt_lt">&le;</label><input type="radio" id="jsx_res_fo_signo_opt_eq" name="jsx_res_fo_signo_opt" /><label for="jsx_res_fo_signo_opt_eq">=</label><input type="radio" id="jsx_res_fo_signo_opt_gt" name="jsx_res_fo_signo_opt" /><label for="jsx_res_fo_signo_opt_gt">&ge;</label>
-            </div>
-            <input type="text" id="jsx_res_fo_limite" class="form-control" />
-            </div>
-            <div id="jsx_res_fo_nombre">
-            <button id="jsx_res_fo_boton">A&ntilde;adir</button>
-            <input type="hidden" id="jsx_res_fo_nom" />
-            </div>
-            </div>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <div id="" class="m-3">
-                    <div class="ui-state-default ui-corner-all">Restricciones </div>
-                    <ol id="jsx_res_act" class="row"></ol>
+                                <div id="jsx_fo_numvar_s"></div>
+                            </div>
+                            <div id="jsx_fo_fo" class="m-5">
+                                <div id="jsx_fo_fo_root">
+                                    <div><input type="radio" checked="checked" /><label>+</label><input
+                                            type="radio" /><label>-</label></div><input type="number"
+                                        style="width: 100px; float: right; padding: 20px; background-color: #62BBE8; color: white; font-weight: 800;"
+                                        class="form-control p-3" style="float: left; display: inline;" /> X
+                                </div>
+                                <div id="jsx_fo_fo_cont"></div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </td>
-        </tr>
-        </table>
+
+                <div class="row">
+                    <div id="jsx_restricciones" style="width: 100%; display: block;">
+                        <div class="titulo ui-state-default ui-corner-all">Restricciones</div>
+                        <div class="contenido ui-corner-all">
+                            <table id="jsx_res">
+                                <tr>
+                                    <td>
+                                        <div id="jsx_res_nueva">
+                                            <div id="jsx_res_fo_cont"></div>
+                                            <div id="jsx_res_fo_signo">
+                                                <div id="jsx_res_fo_signo_opt">
+                                                    <input type="radio" checked="checked" id="jsx_res_fo_signo_opt_lt"
+                                                        name="jsx_res_fo_signo_opt" /><label
+                                                        for="jsx_res_fo_signo_opt_lt">&le;</label><input type="radio"
+                                                        id="jsx_res_fo_signo_opt_eq"
+                                                        name="jsx_res_fo_signo_opt" /><label
+                                                        for="jsx_res_fo_signo_opt_eq">=</label><input type="radio"
+                                                        id="jsx_res_fo_signo_opt_gt"
+                                                        name="jsx_res_fo_signo_opt" /><label
+                                                        for="jsx_res_fo_signo_opt_gt">&ge;</label>
+                                                </div>
+                                                <input type="number" id="jsx_res_fo_limite" class="form-control"
+                                                    style="width: 100px; float: right; padding: 20px; background-color: #62BBE8; color: white; font-weight: 800;" />
+                                            </div>
+                                            <div id="jsx_res_fo_nombre">
+                                                <button id="jsx_res_fo_boton">A&ntilde;adir</button>
+                                                <input type="hidden" id="jsx_res_fo_nom" />
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div id="" class="m-3">
+                                            <div class="ui-state-default ui-corner-all">Restricciones </div>
+                                            <ol id="jsx_res_act" class="row"></ol>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div id="tab_au">
+
+                <div id="jsx_problema" style="overflow-x: auto;">
+                    <div class="titulo ui-state-default ui-corner-all">Problema</div>
+                    <div class="contenido ui-corner-all" style="padding: 1px;">
+                        <table>
+                            <tr>
+
+                                <td id="jsx_pro_botonestd" style="border: none; ">
+                                    <div id="jsx_pro_botones" style="display: flex; direction: row;">
+                                        <button onclick="location.reload()">Reiniciar</button>
+                                        <button>Calcular</button>
+                                    </div>
+
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <div class="ui-state-default ui-corner-all" style="padding: 0.5em;">Modelo
+                                        Aumentado:</div>
+                                </td>
+
+                            <tr>
+                                <td id="jsx_segundo1" style="padding-left: 1em; visibility: hidden;">
+                                    <div id="metodoartificial">
+                                        <input type="radio" id="dosfases" name="metodoartificial"
+                                            checked="checked" /><label for="dosfases">2 fases</label>
+                                        <!-- <input type="radio" id="mgrande" name="metodoartificial" /><label for="mgrande">M grande</label> -->
+                                    </div>
+                                </td>
+                            </tr>
+
+                            </tr>
+                            <tr>
+                                <td style="margin: 0 auto;">
+                                    <div id="jsx_pro_p1"></div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td id="jsx_segundo2" style="visibility: hidden; ">
+                                    <div id="jsx_pro_p2"></div>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <div id="tab_simplex">
+                <div id="jsx_solucion">
+                    <div class="titulo ui-state-default ui-corner-all">Soluci&oacute;n</div>
+                    <div class="contenido" id="jsx_solucion_pasos">
+                    </div>
+                </div>
+
+            </div>
+
         </div>
+
+
+        <div id="pie" style="color: aliceblue;">
+            OptiLineal v0.2 &copy; 2023
+            <div>
+            </div>
         </div>
     </div>
+    <!-- <script src="cordova.js"></script> -->
+    <script src="js/index.js"></script>
+</body>
 
-    </div>
-    <div id="tab_au">
-
-    <div id="jsx_problema" style="overflow-x: auto;">
-     <div class="titulo ui-state-default ui-corner-all">Problema</div>
-     <div class="contenido ui-corner-all" style="padding: 1px;">
-      <table>
-       <tr >
-
-        <td id="jsx_pro_botonestd" style="border: none; ">
-         <div id="jsx_pro_botones" >
-          <button>Reiniciar</button>
-          <button>Calcular</button>
-         </div>
-
-        </td>
-        </tr>
-
-        <tr>
-        <td >
-         <div class="ui-state-default ui-corner-all" style="padding: 0.5em;">Módelo Aumentado:</div>
-        </td>
-
-        <tr>
-        <td id="jsx_segundo1" style="padding-left: 1em; visibility: hidden;">
-         <div id="metodoartificial">
-          <input type="radio" id="dosfases" name="metodoartificial" checked="checked" /><label for="dosfases">2 fases</label>
-          <input type="radio" id="mgrande" name="metodoartificial" /><label for="mgrande">M grande</label>
-         </div>
-        </td>
-        </tr>
-
-       </tr>
-       <tr>
-        <td style="margin: 0 auto;">
-         <div id="jsx_pro_p1"></div>
-        </td>
-    </tr>
-    <tr>
-        <td id="jsx_segundo2" style="visibility: hidden; ">
-         <div id="jsx_pro_p2"></div>
-        </td>
-       </tr>
-      </table>
-     </div>
-    </div>
-    </div>
-
-    <div id="tab_simplex">
-        <div id="jsx_solucion">
-     <div class="titulo ui-state-default ui-corner-all">Soluci&oacute;n</div>
-     <div class="contenido" id="jsx_solucion_pasos">
-     </div>
-    </div>
-
-   </div>
-
-  </div>
-
-
-  <div id="pie" style="color: aliceblue;">
-   OptiLineal v0.2 &copy; 2023
-   <div>
-   </div>
-  </div>
-</div>
-  <script src="cordova.js"></script>
-  <script src="js/index.js"></script>
- </body>
 </html>
