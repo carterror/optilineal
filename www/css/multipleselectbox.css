@@ -1,0 +1,33 @@
+@CHARSET "UTF-8";
+
+.MultipleSelectBox {
+	border: 1px solid #aaa;
+	height: 200px;
+	list-style-type: none;
+	margin: 0;
+	overflow: auto;
+	padding: 1px;
+	width: 500px;
+}
+
+.MultipleSelectBox.selecting {
+	border: 1px solid black;
+}
+
+.MultipleSelectBox li {
+	border: 1px dotted transparent;
+	cursor: pointer;
+}
+
+.MultipleSelectBox li.disabled {
+	color: gray;
+	font-style: italic;
+}
+
+.MultipleSelectBox li.selected {
+	background-color: #F39814;
+}
+
+.MultipleSelectBox li.selecting {
+	border: 1px dotted black;
+}

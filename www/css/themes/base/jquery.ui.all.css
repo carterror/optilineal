@@ -1,0 +1,31 @@
+/*
+ * jQuery UI CSS Framework @VERSION
+ *
+ * Copyright 2010, AUTHORS.txt (http://jqueryui.com/about)
+ * Dual licensed under the MIT or GPL Version 2 licenses.
+ * http://jquery.org/license
+ *
+ * http://docs.jquery.com/UI/Theming
+ */
+@import "jquery.ui.base.css";
+@import "jquery.ui.theme.css";
+
+   table.jsx_matriz{
+    border: 0em solid gray;
+    border-collapse: collapse;
+    margin: 1em;
+   }
+   table.jsx_matriz td{
+    padding: 0.2em 0em;
+    width: 3em;
+    text-align: center;
+   }
+   tr.jsx_matriz_1{
+    border-bottom: 0.1em solid #777;
+   }
+   tr.jsx_matriz_1n{
+    background-color: #ddd;
+   }
+   tr.jsx_matriz_n{
+    border-top: 0.1em solid #777;
+   }

@@ -1,0 +1,8 @@
+<?xml version='0.1' encoding='utf-8'?>
+<widget id="com.voltbuilder.sample" xmlns="http://www.w3.org/ns/widgets" version="1.0.0">
+  <name>OptiLineal</name>
+  <description>Mi proyecto Pid sobre Programación lineal.</description>
+  <plugin name="cordova-plugin-device" />
+  <access origin="*" />
+  <icon src="icon.png" />
+</widget>

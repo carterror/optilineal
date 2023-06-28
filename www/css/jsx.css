@@ -1,0 +1,218 @@
+   #cabecera,#simplex_tabs,#pie{
+    margin: 2em auto;
+   }
+   #cabecera{
+    font-weight: bold;
+    text-align: center;
+    font-size: 1.7em;
+    padding: 0.7em 0em;
+   }
+   #cabecera div{
+    float: right;
+    margin-right: 1em;
+    margin-left: -10em;
+   }
+   #pie{
+    text-align: center;
+   }
+   #pie div{
+    float: right;
+    margin-left: -12em;
+   }
+   #simplex_tabs div{
+    text-align: justify;
+   }
+   #tab_simplex{
+   }
+   #jsx_funcion_objetivo,#jsx_restricciones{
+   }
+   #jsx_funcion_objetivo{
+    float: left;
+   }
+   #jsx_restricciones{
+    margin-left: 0em;
+   }
+   #jsx_problema,#jsx_solucion{
+    margin-top: 0.9em;
+   }
+   #jsx_funcion_objetivo div.titulo,#jsx_restricciones div.titulo,#jsx_problema div.titulo,#jsx_solucion div.titulo{
+    padding: 0.5em 1em;
+   }
+   #jsx_funcion_objetivo div.contenido,#jsx_restricciones div.contenido,#jsx_problema div.contenido{
+    padding: 0.5em 1em;
+    margin-top: 0.5em;
+    border: 1px solid #bbb;
+   }
+   #jsx_fo_numvar{
+    padding: 0.5em;
+    margin-top: 0.7em;
+   }
+   #jsx_fo_numvar_s{
+    margin-top: 0.7em;
+   }
+   #jsx_fo_fo_root{
+    display: none;
+   }
+   #jsx_fo_fo_cont div,#jsx_res_fo_cont div{
+    margin-top: 0.2em;
+    margin-left: 1em;
+    display: inline;
+   }
+   #jsx_fo_fo_cont div input,#jsx_res_fo_cont div input,#jsx_res_fo_signo input,#jsx_res_fo_nombre input{
+    height: 1.7em;
+    text-align: center;
+   }
+   #jsx_res_fo_nombre input{
+    text-align: left;
+   }
+   #jsx_res_fo_signo_opt{
+    display: inline;
+   }
+   #jsx_res_fo_signo{
+    margin-top: 1em;
+    margin-left: 2em;
+   }
+   #jsx_res_fo_boton{
+    margin-left: 1.9em;
+   }
+   #jsx_res_fo_nombre{
+    margin-top: 1em;
+   }
+   #jsx_res_nueva{
+    display: inline-block;
+   }
+   #jsx_res_cont{
+    float: right;
+    margin-left: 1em;
+   }
+   #jsx_res_cont div{
+    padding: 0.5em;
+    padding-left: 1em;
+   }
+   
+   #feedback{
+    font-size: 1em;
+   }
+   #jsx_res_act .ui-selecting{
+    background: #ddd;
+   }
+   #jsx_res_act .ui-selected{
+    background: #eee;
+    color: #000;
+   }
+   #jsx_res_act{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+   }
+   #jsx_res_act li{
+    margin: 3px;
+    padding: 0.4em;
+    font-size: 1em;
+    height: 1.2em;
+   }
+   #jsx_res td{
+    margin: 0;
+    padding: 0;
+    vertical-align: top;
+   }
+   #jsx_pro_botonestd{
+    border-right: 1px solid gray;
+    padding-right: 1.2em;
+    margin-right: 1em;
+   }
+   #jsx_pro_botones button{
+    display: block;
+    margin-bottom: 0.2em;
+   }
+   #jsx_problema table tr td{
+    vertical-align: top;
+   }
+   #jsx_pro_p1 table tr td, #jsx_pro_p2 table tr td{
+    text-align: center;
+   }
+   #jsx_pro_botones2{
+    border-left: 1px solid gray;
+    padding-left: 1.2em;
+    margin-left: 1em;
+   }
+   #jsx_pro_p1,#jsx_pro_p2{
+    margin-left: 1em;
+   }
+   .jsx_matriz_pivote{
+    color: blue;
+    font-weight: bold;
+   }
+   #lienzo{
+    border: 1px solid gray;
+    margin-left: 1.6em;
+    margin-top: 1.6em;
+    background-color: white;
+   }
+   #configuracion,#configuracion2,#configuracion3,#configuracion4{
+    border: 1px solid gray;
+    margin-top: 1.6em;
+    clear: right;
+    margin-left: 1.6em;
+    background-color: white;
+   }
+   #configuracion div,#configuracion2 div,#configuracion3 div,#configuracion4 div{
+    margin: 10px;
+   }
+   #configuracion div input[type="text"],#configuracion2 div input[type="text"]{
+    text-align: center;
+   }
+   #configuracion4 div input[type="text"]{
+    text-align: center;
+   }
+   div.configuracionTitulo{
+    font-weight: bold;
+    cursor: pointer;
+   }
+   div.configuracionTitulo + div{
+    border-top: 1px solid gray;
+   }
+   #jsx_grafica_tabla td{
+    vertical-align: top;
+   }
+   #jsx_grafica_tabla{
+    border-collapse: collapse;
+   }
+   input.jsx_xrest{
+    border: 0;
+    background-color: #3dabe3;
+    cursor: pointer;
+    margin-right: 1em;
+    color: white;
+    padding: 0.1em;
+    margin-top: -0.45em;
+    margin-left: -0.8em;
+    padding-left: 0.3em;
+    padding-right: 0.3em;
+    height: 2.2em;
+    font-weight: bold;
+   }
+   input.jsx_xrest:hover{
+    color: black;
+   }
+   div.jsx_matriz_sol{
+    margin-left: 1.5em;
+   }
+   div#tab_teoria table{
+    text-align: center;
+    margin-bottom: 3em;
+   }
+   div#tab_teoria  img{
+    border: 0;
+    height: 6em;
+    margin-top: 3em;
+   }
+   div#tab_teoria a{
+    text-decoration: none;
+   }
+   div#tab_teoria a:hover{
+    color: red;
+   }
+   div#tab_acercade p{
+    font-size: 1.3em;
+   }
